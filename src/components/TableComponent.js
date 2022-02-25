@@ -11,30 +11,30 @@ import paginationFactory from "react-bootstrap-table2-paginator";
 // import {Search} from "react-bootstrap-table2-toolkit";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import swal from "sweetalert";
-import { deleteTodoList } from "../action/listToDoAction";
+// import swal from "sweetalert";
+// import { deleteTodoList } from "../action/listToDoAction";
 
 
 // const { SearchBar } = Search;
 
-const handleClick = (dispatch, id) => {
-  swal({
-    title: "Apakah anda yakin ? ",
-    text: "Data Akan Terhapus Dari Database",
-    icon: "warning",
-    buttons: true,
-    dangerMode: true,
-  }).then((willDelete) => {
-    if (willDelete) {
-      dispatch(deleteTodoList(id));
-      swal("Berhasil Data Terhapus", {
-        icon: "success",
-      });
-    } else {
-      swal("Gagal Data Tidak Terhapus");
-    }
-  });
-};
+// const handleClick = (dispatch, id) => {
+//   swal({
+//     title: "Apakah anda yakin ? ",
+//     text: "Data Akan Terhapus Dari Database",
+//     icon: "warning",
+//     buttons: true,
+//     dangerMode: true,
+//   }).then((willDelete) => {
+//     if (willDelete) {
+//       dispatch(deleteTodoList(id));
+//       swal("Berhasil Data Terhapus", {
+//         icon: "success",
+//       });
+//     } else {
+//       swal("Gagal Data Tidak Terhapus");
+//     }
+//   });
+// };
 const mapStateToProps = (state) => {
   return {
     getListsToDo: state.listsToDo.getListsToDo,
