@@ -23,7 +23,7 @@ class DetailPokemons extends Component {
           <div className="detail-container">
               <div className="title-container">
                   <h3 className="name text-center" id="update_name">Pikachu</h3>
-                  <hr className="seperator"/>
+                  <hr className="seperator" style={{height:'10px', backgroundColor:'#6eecb7'}}/>
                   <div className="stats text-center">
                       <span className="first cp-text col-md-6" id="update_hp">HP 32/32</span>
                       <span className="cp-text col-md-6" id="update_cp">XP 149</span>

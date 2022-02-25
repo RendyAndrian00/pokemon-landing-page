@@ -60,7 +60,7 @@ const TableComponent = (props) => {
       formatter: (rowContent, row) => {
         return (
           <div>
-            <Link to={"detail/" + row.id}>
+            <Link to={"detail/" + row.url}>
               <Button color="primary" className="shadow">
                 <FontAwesomeIcon icon={faUser} /> Detail
               </Button>
