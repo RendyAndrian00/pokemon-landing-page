@@ -10,7 +10,7 @@ let initialState = {
   // list user post
   postListTodo: false,
   erorPostListTodo: false,
-  title: "Crud ReactJs",
+  title: "PokeDex",
 };
 const listsToDo = (state = initialState, action) => {
   switch (action.type) {

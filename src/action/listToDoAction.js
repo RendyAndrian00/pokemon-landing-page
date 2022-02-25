@@ -8,12 +8,12 @@ export const PUT_TODO_LIST = "PUT_TODO_LIST";
 export const getTodoList = () => {
   return (dispatch) => {
     axios
-      .get("https://fakestoreapi.com/users")
+      .get("https://pokeapi.co/api/v2/pokemon")
       .then(function (response) {
         dispatch({
           type: GET_TODO_LIST,
           payload: {
-            data: response.data,
+            data: response.data.results,
             isLoaded: true,
             errorMessage: false,
           },
