@@ -18,10 +18,10 @@ class HomeContainers extends Component {
     return (
       <div className="h-auto -mt-20">
         <div className="container flex flex-wrap items-center">
-          <div className="w-10/12 md:w-6/12 lg:w-6/12 px-4 md:px-4 ">
+          <div className="w-12/12 md:w-12/12 lg:w-6/12 lg:px-0 md:px-4">
             <TableComponent/>
           </div>
-          <div className="w-full md:w-6/12 px-4">
+          <div className="w-full lg:w-6/12 md:w-12/12 mt-4">
             <DetailPokemons/>
           </div>
         </div>
