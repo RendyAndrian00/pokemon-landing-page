@@ -2,13 +2,17 @@ import React, { Component } from "react";
 import TableComponent from "../components/TableComponent";
 import DetailPokemons from "../components/DetailPokemonComponent";
 import { connect } from "react-redux";
-import { deleteTempTodoList, getTodoList } from "../action/listToDoAction";
+import { deleteTempTodoList, getTodoList, getTodoListDetail } from "../action/listToDoAction";
 
 class HomeContainers extends Component {
   componentDidMount() {
     this.props.dispatch(getTodoList());
+    if(window.location.pathname.split('/')['1']!=''){
+      this.props.dispatch(getTodoListDetail(window.location.pathname.split('/')['1']));
+    }else{
+      this.props.dispatch(getTodoListDetail('6'));
+    }
     this.props.dispatch(deleteTempTodoList());
-
   }
   render() {
     return (

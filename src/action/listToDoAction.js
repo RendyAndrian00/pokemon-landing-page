@@ -35,7 +35,7 @@ export const getTodoList = () => {
 export const getTodoListDetail = (id) => {
   return (dispatch) => {
     axios
-      .get("https://fakestoreapi.com/users/" + id)
+      .get("https://pokeapi.co/api/v2/pokemon/" + id)
       .then(function (response) {
         dispatch({
           type: GET_TODO_LIST_DETAIL,
