@@ -57,7 +57,7 @@ const DetailPokemons = (props) => {
                   </div>
                   <div className="col data-container">
                   <p className="stardust" id="update_candy">{Math.floor((Math.random() * 200) + 1)}</p>
-                  <p className="muted-text" id="update_candy_title">Pikachu Candy</p>
+                  <p className="muted-text" id="update_candy_title">{props.getListsToDoDetail.name} Candy</p>
                   </div>
               </div>
           </div>

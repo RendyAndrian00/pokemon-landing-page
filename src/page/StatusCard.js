@@ -1,7 +1,7 @@
 import {
     faUser,
-    faAddressCard,
     faGift,
+    faMap,
     faGlobe
   } from "@fortawesome/free-solid-svg-icons";
 import Card from '@material-tailwind/react/Card';
@@ -26,7 +26,7 @@ export default function StatusCard({
             <Card>
                 <CardRow>
                     <CardHeader color={color} iconOnly className="mb-0">
-                        {icon==='faAddressCard' && <FontAwesomeIcon icon={faAddressCard} size="2x"/>}
+                        {icon==='faMap' && <FontAwesomeIcon icon={faMap} size="2x"/>}
                         {icon==='faUser' && <FontAwesomeIcon icon={faUser} size="2x"/>}
                         {icon==='faGift' && <FontAwesomeIcon icon={faGift} size="2x"/>}
                         {icon==='faGlobe' && <FontAwesomeIcon icon={faGlobe} size="2x"/>}

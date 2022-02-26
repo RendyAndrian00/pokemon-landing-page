@@ -78,7 +78,6 @@ const TableComponent = (props) => {
     <Container className="rounded-xl bg-white shadow p-4">
       {props.getListsToDo ? (
         <>
-        <h4>Choose Your Pokemon</h4>
           <BootstrapTable
             wrapperClasses="table-responsive"
             bordered={false}
@@ -90,7 +89,7 @@ const TableComponent = (props) => {
             data={props.getListsToDo}
             columns={columns}
             defaultSorted={defaultSorted}
-            pagination={paginationFactory({ sizePerPage: 5 })}
+            pagination={paginationFactory({ sizePerPage: 3 })}
           />
         </>
       ) : (

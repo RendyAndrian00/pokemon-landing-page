@@ -1,8 +1,11 @@
-import { GET_TODO_LIST, GET_TODO_LIST_DETAIL, POST_TODO_LIST, PUT_TODO_LIST} from "../action/listToDoAction";
+import { GET_TODO_LIST, GET_TODO_LIST_DETAIL, POST_TODO_LIST, PUT_TODO_LIST , GET_TODO_LIST_ITEM} from "../action/listToDoAction";
 let initialState = {
   // list user all
   getListsToDo: false,
   errorListToDo: false,
+  // list item all
+  getListsToDoItem: false,
+  errorListToDoItem: false,
   // list user detail
   isLoading: false,
   getListsToDoDetail: false,
@@ -21,6 +24,15 @@ const listsToDo = (state = initialState, action) => {
         isLoading: true,
         errorListToDo: action.payload.errorMessage,
       };
+      
+    case GET_TODO_LIST_ITEM:
+      return {
+        ...state,
+        getListsToDoItem: action.payload.data,
+        isLoading: true,
+        errorListToDoItem: action.payload.errorMessage,
+      };
+
       
     case GET_TODO_LIST_DETAIL:
       return {

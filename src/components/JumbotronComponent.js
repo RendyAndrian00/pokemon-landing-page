@@ -12,7 +12,7 @@ const mapStateToProps = (state) =>{
 
 const JumbotronComponent = (props) => {
   return (
-    <div className="text-white" style={{backgroundColor:"#03a9f4"}}>
+    <div className="text-white bg-indigo-500">
       <Container className="p-3 pt-5 pb-5">
         <h1 className="display-3">{props.title}</h1>
         <p className="lead">
