@@ -1,13 +1,13 @@
-# [CRUD REACT JS]
-This project is about creating CRUD using ReactJS. The css framework used is TailwindCSS. The api used is the Dummy API.
+# [POKEDEX REACT JS]
+This project is about shoe pokemon using ReactJS. The css framework used is TailwindCSS. The api used is the Dummy API.
 
 ## Layout APP
 ![Image](http://pranaharaabsensi.000webhostapp.com/img/layouttailwind.png)
 
 ## Demo
--   [Dashboard](https://crud-reactjs-six.vercel.app/)
--   [Edit Page](https://crud-reactjs-six.vercel.app/edit/1)
--   [Detail Page](https://crud-reactjs-six.vercel.app/detail/1)
+-   [Dashboard](https://pokemon-landing-page.vercel.app/)
+<!-- -   [Edit Page](https://crud-reactjs-six.vercel.app/edit/1) -->
+-   [Catch up Page](https://pokemon-landing-page.vercel.app/1)
 
 ## Browser Support
 
