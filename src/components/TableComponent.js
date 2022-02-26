@@ -1,7 +1,7 @@
 import "../App.css";
 import React from "react";
 import BootstrapTable from "react-bootstrap-table-next";
-import { Container, Button } from "reactstrap";
+import { Container } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpinner,

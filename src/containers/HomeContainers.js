@@ -7,7 +7,7 @@ import { deleteTempTodoList, getTodoList, getTodoListDetail } from "../action/li
 class HomeContainers extends Component {
   componentDidMount() {
     this.props.dispatch(getTodoList());
-    if(window.location.pathname.split('/')['1']!=''){
+    if(window.location.pathname.split('/')['1']!==''){
       this.props.dispatch(getTodoListDetail(window.location.pathname.split('/')['1']));
     }else{
       this.props.dispatch(getTodoListDetail('6'));
