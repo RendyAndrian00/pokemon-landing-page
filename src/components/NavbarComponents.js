@@ -1,5 +1,5 @@
 import React from 'react';
-// import logo from '../assets/img/logo.png';
+import logo from '../assets/img/logo.png';
 import {
   Collapse,
   Navbar,
@@ -30,12 +30,13 @@ export default class NavbarComponent extends React.Component {
   }
   render() {
     return (
+      <>
       <div className="text-white bg-indigo-500 rounded">
         <Container>
         <Navbar className="text-white bg-indigo-500 rounded" light expand="md">
           <NavbarBrand href="/" className="text-white" style={{fontSize :35, fontWeight:'bold'}}>
-            {/* <img src={logo} className="p-0 m-0" style={{width:200}}/> */}
-            POKEMON GO
+            <img src={logo} className="p-0 m-0" style={{width:200}} alt=""/>
+            {/* POKEMON GO */}
             </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
@@ -68,6 +69,7 @@ export default class NavbarComponent extends React.Component {
         </Navbar>
         </Container>
       </div>
+      </>
     );
   }
 }
