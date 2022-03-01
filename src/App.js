@@ -4,7 +4,7 @@ import NavbarComponent from "./components/NavbarComponents";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import HomeContainers from "./containers/HomeContainers";
 import StatusCard from "./page/StatusCard";
-import "./App.css";
+import "./App.css"; 
 import "./assets/styles/tailwind.css";
 import CountPokemonComponent from "./components/CountPokemonComponent";
 import CountPokemonItemComponent from "./components/CountPokemonItemComponent";
