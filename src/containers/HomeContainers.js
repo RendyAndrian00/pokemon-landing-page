@@ -3,15 +3,9 @@ import card1 from '../assets/img/card1.png';
 import card2 from '../assets/img/card2.png';
 import card3 from '../assets/img/card3.png';
 import card4 from '../assets/img/card4.png';
-// import {
-//   faTimes,
-//   faCheck,
-// } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import TableComponent from "../components/TableComponent";
 import DetailPokemons from "../components/DetailPokemonComponent";
 import { connect } from "react-redux";
-// import swal from "sweetalert";
 import { deleteTempTodoList, getTodoList, getTodoListDetail, getTodoListItem } from "../action/listToDoAction";
 import TableItemComponent from "../components/TableItemComponent";
 class HomeContainers extends Component {
